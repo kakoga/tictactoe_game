@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+}
+
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+#playerIcon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.grid {
+  height:auto;
+  width:auto;
+  margin: auto;
+
+}
+
+#field1 img {
+  display: none;
+}
+
+.fieldButton {
+  height: 100%;
+  width: 100%;
+}
+
+.allFields {
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border: black solid 5px;
+}
+
+.X {
+  background-color: pink;
+}
+
+.O {
+  background-color: blue;
+}
