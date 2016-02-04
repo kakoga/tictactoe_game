@@ -15,15 +15,15 @@ $(document).ready(function(){
 //turn each box into a button. A counter will be applied that disables the button once the counter increments to 1
 
 //FIELD 2: add a counter that will disable the box once it reaches 1
-var counter = 1;
+var counter = 0;
 
 function addMark(field) {
+  // Even numbers = X
   if(counter % 2 === 0) {
-
+    $(field).html('<img src="letterX.png">');
     counter++;
-  }
-  else if(counter % 2 === 1) {
-    $(field).html(<img src="/Users/learn/Desktop/tictactoe_kim:daniel/letterX.png"/>);
+  } else if(counter % 2 === 1) { // Odd numbers = O
+    $(field).html('<img src="letterO.png">');
     counter++;
   }
   console.log(counter);
@@ -32,7 +32,7 @@ function addMark(field) {
 
 $("#field1Button").click(function(){
   // $("#field2").addClass("X");
-  addMark("#span1");
+  addMark("#field1");
 });
 
 $("#field2Button").click(function(){
@@ -75,25 +75,15 @@ $("#field9Button").click(function(){
   addMark("#field9");
 });
 
+// add X and O combinations
+
+function isWinner() {
+  // if(table.find("#field1").html('<img src="letterX.png">') && table.find("#field2").html('<img src="letterX.png">') && table.find("#field3").html('<img src="letterX.png">')) {
+    alert("winner");
+}
 
 
 
-
-
-
-
-
-
-
-
-/* if don't want to go square by square then need to experiment with wrapping grid in div and applying logic of disabling boxes w/ X or O in it to whole grid */
-
-/* if counter % 2 = 0, then it's an X
-if counter % 2 = 1, then it's an O */
-
-
-
-//unbind fuction will remove the funtion from the click
 
 
 

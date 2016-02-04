@@ -25,10 +25,6 @@ img {
 
 }
 
-#field1 img {
-  display: none;
-}
-
 .fieldButton {
   height: 100%;
   width: 100%;
@@ -39,6 +35,10 @@ img {
   width: 250px;
   background-color: white;
   border: black solid 5px;
+}
+
+.span1 {
+  background-image: url(/Users/kim/git/kakoga/tictactoe_gameTest/letterX.png);
 }
 
 .X {
